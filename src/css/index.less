@@ -1,0 +1,356 @@
+@charset "UTF-8";
+@jdRed: #f10215;
+//@jdHover:#c81
+@write: #fff;
+@ddd: #ddd;
+#jd-container {
+  height: 5000px;
+  .top-container {
+    height: 30px;
+    background-color: #f1f1f1;
+    //border: 1px solid @ddd;
+    .w {
+      height: 100%;
+      ul.city-list, ul.top-nav {
+        li.dropdown {
+          //倒三角
+          border: 1px solid #f1f1f1;
+          height: 30px;
+          &.icon-position {
+            position: relative;
+            padding: 0 20px 0 5px;
+            i {
+              position: absolute;
+              top: 12px;
+              right: 8px;
+              width: 12px;
+              height: 6px;
+              overflow: hidden;
+              span {
+                font: 400 13px/15px "consolas";
+                position: absolute;
+                top: -8px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      ul.city-list {
+        li.dropdown {
+          div.write-spacer {
+            position: absolute;
+            left: 0;
+            top: -4px;
+            width: 85px;
+            height: 8px;
+            background-color: @write;
+            display: none;
+          }
+          &:hover {
+            background-color: @write;
+            border: 1px solid @ddd;
+            //.send-city {
+            //  height: 28px;
+            //  line-height: 28px;
+            //}
+            //border-left: 1px solid #ddd;
+            //border-right: 1px solid #ddd;
+            div.write-spacer {
+              display: block;
+            }
+            div.city-select {
+              display: block;
+              width: 312px;
+              height: 245px;
+              border: 1px solid @ddd;
+              position: absolute;
+              top: 29px;
+              left: -1px;
+              z-index: 4;
+              div.dropdown-layer {
+                margin: 5px;
+                div.city-item {
+                  a {
+                    float: left;
+                    width: 40px;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    margin-right: 20px;
+                    margin-bottom: 5px;
+                    &:hover {
+                      background-color: @jdRed;
+                      color: @write;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .send-city {
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+      }
+      ul.top-nav {
+        li {
+          padding: 0 5px;
+          float: left;
+          height: 30px;
+          line-height: 30px;
+          &.spacer {
+            width: 1px;
+            padding: 0;
+            margin: 9px 5px;
+            height: 12px;
+            background-color: @ddd;
+          }
+
+        }
+        li.nav-login {
+          .free-reg {
+            color: @jdRed;
+          }
+        }
+        li.focus {
+          position: relative;
+          &:hover{
+            /*关注京东*/
+            .jd-focus {
+              display: block;
+              width: 84px;
+              height: 107px;
+              border: 1px solid @ddd;
+              position: absolute;
+              top: 29px;
+              left: -1px;
+              z-index: 1;
+            }
+          }
+
+        }
+        li.phone {
+          position: relative;
+          /*手机京东*/
+          &:hover {
+            .jd-phone {
+              display: block;
+              width: 252px;
+              height: 197px;
+              border: 1px solid @ddd;
+              position: absolute;
+              top: 29px;
+              left: -1px;
+              z-index: 1;
+              img {
+                width: 250px;
+                height: 195px;
+              }
+            }
+          }
+        }
+        .dropdown.icon-position {
+         /*我的京东*/
+          .my-jd {
+            width: 280px;
+            height: 294px;
+            border: 1px solid @ddd;
+            background-color: @write;
+            position: absolute;
+            top: 29px;
+            left: -1px;
+            z-index: 1;
+            div.write-spacer {
+              position: absolute;
+              left: 0px;
+              top: -4px;
+              width: 73px;
+              height: 8px;
+              background-color: @write;
+            }
+            .upload-pic {
+              width: 62px;
+              height: 62px;
+              border-radius: 50%;
+              overflow: hidden;
+              position: absolute;
+              top: 10px;
+              left: 15px;
+              img {
+                width: 62px;
+                height: 62px;
+              }
+            }
+            .login {
+              position: absolute;
+              top: 21px;
+              left: 85px;
+              a {
+                font-weight: 700;
+              }
+            }
+            .coupon {
+              position: absolute;
+              top: 45px;
+              left: 85px;
+            }
+            .jd-list {
+              width: 250px;
+              height: 100px;
+              position: absolute;
+              top: 87px;
+              left: 14px;
+              .item {
+                float: left;
+                margin-right: 60px;
+                line-height: 15px;
+                margin-bottom: 11px;
+                &.item-dou ,&.item-licai {
+                  margin-left: 11px;
+                }
+              }
+            }
+            .foot-record {
+              width: 280px;
+              height: 102px;
+              position: absolute;
+              bottom: 0;
+              border-top: 1px dotted @ddd;
+              h2 {
+                margin-left: 14px;
+                font-weight: 700;
+                color: #666;
+              }
+              .more {
+                margin-right: 14px;
+              }
+              img {
+                position: absolute;
+                top: 40px;
+                left: 18px;
+              }
+            }
+          }
+          /*客服服务*/
+          .jd-service {
+            width: 170px;
+            height: 163px;
+            border: 1px solid #ddd;
+            position: absolute;
+            top: 29px;
+            left: -1px;
+            z-index: 1;
+            .write-spacer {
+              position: absolute;
+              left: 0;
+              top: -4px;
+              width: 73px;
+              height: 8px;
+              background-color: @write;
+            }
+            h2 {
+              position: absolute;
+              top: 4px;
+              left: 10px;
+              font-weight: 700;
+              color: #666;
+            }
+            .service-wrap {
+              width: 135px;
+              height: 68px;
+              position: relative;
+              top: 28px;
+              left: 10px;
+              //border: 1px solid #000;
+              div {
+                line-height: 23px;
+                margin-right: 55px;
+              }
+              div.fr {
+                position: relative;
+                bottom: 68px;
+                right: -50px;
+              }
+            }
+            .service-border {
+              width: 170px;
+              height: 61px;
+              position: absolute;
+              bottom: 0;
+              border-top: 1px dotted @ddd;
+              div {
+                margin: 25px 0 0 10px;
+              }
+            }
+
+          }
+          /*网站导航*/
+          .site-nav {
+            width: 1210px;
+            height: 186px;
+            border: 1px solid @ddd;
+            position: absolute;
+            top: 29px;
+            right: -1px;
+            background-color: @write;
+            z-index: 1;
+            .write-spacer {
+              position: absolute;
+              right: 0;
+              top: -4px;
+              width: 73px;
+              height: 8px;
+              background-color: @write;
+            }
+            .nav-wrap {
+              height: 152px;
+              margin-top: 19px;
+              width: 1210px;
+              dl {
+                border-right: 1px solid @ddd;
+                padding-left: 22px;
+              }
+              dt {
+                font-weight: 700;
+                font-size: 16px;
+                color: #666;
+
+              }
+              dd {
+                height: 120px;
+                .item {
+                  width: 86px;
+                  float: left;
+                  height: 24px;
+                }
+              }
+              .special-theme {
+                width: 367px;
+              }
+              .job-chanel {
+                width: 281px;
+              }
+              .life-service {
+                width: 281px;
+              }
+              .more-nav {
+                width: 281px;
+                border-right: none;
+              }
+            }
+
+          }
+          &:hover {
+            background-color: @write;
+            border: 1px solid @ddd;
+            .my-jd, .jd-phone, .jd-service, .site-nav {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

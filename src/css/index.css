@@ -1,0 +1,15 @@
+@charset "UTF-8";
+#jd-container .top-container {
+  height: 30px;
+  background-color: #f1f1f1;
+}
+#jd-container .top-container .w {
+  height: 100%;
+}
+#jd-container .top-container .w .city-list .dropdown .send-city {
+  line-height: 30px;
+}
+#jd-container .top-container .w .city-list .dropdown.icon-position {
+  position: relative;
+  padding: 0 25px 0 10px;
+}
