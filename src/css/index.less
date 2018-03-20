@@ -1152,4 +1152,106 @@
       }
     }
   }
+  .likes {
+    margin-top: 25px;
+    .like-title {
+      height: 36px;
+      h2 {
+        //display: inline-block;
+        float: left;
+        width: 308px;
+        height: 30px;
+        background: url("../../static/images/homebg.png") 78px -93px no-repeat;
+        font: 700 18px/30px 'microsoft yaihei';
+        text-align: left;
+      }
+      .change {
+        float: right;
+        width: 61px;
+        height: 18px;
+        background: url("../../static/images/homebg.png") -310px -6px no-repeat;
+        cursor: pointer;
+        margin-top: 7px;
+        line-height: 18px;
+        &:hover {
+          color: @jdBack;
+          background-position: -310px -30px;
+        }
+      }
+
+    }
+    .like-line {
+      width: 1208px;
+      height: 5px;
+      position: relative;
+      top: 3px;
+      &:hover {
+        i {
+          transform: translateX(-843px);
+        }
+      }
+      i {
+        position: absolute;
+        top: 0;
+        width: 365px;
+        height: 5px;
+        background: url("../../static/images/homebg.png") 0 -124px no-repeat;
+        transition: all .5s ease;
+        margin-left: 843px;
+      }
+    }
+    .like-items {
+      height: 233px;
+      border: 1px solid #e4e4e4;
+      overflow: hidden;
+
+      ul {
+        width: 500%;
+        height: 233px;
+        li {
+          float: left;
+          .img {
+            width: 200px;
+            height: 130px;
+            margin-top: 20px;
+            img {
+              width: 130px;
+              height: 130px;
+              display: block;
+              margin: 0 auto;
+            }
+          }
+          .info {
+            width: 200px;
+            height: 61px;
+            border-right: 1px solid #e4e4e4;
+            margin-top: 5px;
+            text-align: left;
+            a {
+              display: block;
+              width: 130px;
+              height: 38px;
+              margin: 0 auto;
+              overflow: hidden;
+            }
+            span {
+              display: block;
+              width: 130px;
+              height: 20px;
+              color: @jdBack;
+              font-size: 18px;
+              line-height: 20px;
+              margin: 0 auto;
+              margin-top: 5px;
+            }
+          }
+          &:nth-child(6n){
+            .info {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
