@@ -142,7 +142,7 @@ button, input {
 	height: 0;
 }
 
-.clearfix :after {
+.clearfix:after {
 	clear: both;
 }
 

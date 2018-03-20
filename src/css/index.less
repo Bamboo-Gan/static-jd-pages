@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @jdRed: #f10215;
-@jdBack:#c81623;
+@jdBack: #c81623;
 @write: #fff;
 @ddd: #ddd;
 #jd-container {
@@ -523,7 +523,7 @@
             li {
               height: 31px;
               line-height: 31px;
-              padding:0 10px;
+              padding: 0 10px;
               color: @write;
               a {
                 color: @write;
@@ -534,8 +534,8 @@
               }
               &:hover {
                 background-color: @write;
-                a,span {
-                  color:@jdBack;
+                a, span {
+                  color: @jdBack;
                 }
               }
             }
@@ -549,8 +549,9 @@
             position: absolute;
             top: 0;
             left: 209px;
+            background-color: @write;
             //overflow: hidden;
-            .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14,.item15{
+            .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
               width: 1000px;
               overflow: hidden;
               position: relative;
@@ -621,7 +622,7 @@
                         padding: 0 10px;
                         border-left: 1px solid #e0e0e0;
                         margin: 3px 0;
-                       }
+                      }
                     }
                   }
                 }
@@ -689,6 +690,464 @@
           width: 190px;
           height: 40px;
           background: url("../../static/images/treasure.jpg");
+        }
+      }
+    }
+  }
+  .main .main-slider,
+  .sub-banner .img-banner {
+    .arrow {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      button {
+        width: 24px;
+        height: 40px;
+        font: 400 20px/40px "SimSun";
+        color: rgba(255, 255, 255, .5);
+        background: rgba(0, 0, 0, .2);
+        cursor: pointer;
+        transition: all .2s ease;
+        &.arrow-left {
+          float: left;
+        }
+        &.arrow-right {
+          float: right;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, .8);
+          background: rgba(0, 0, 0, .5);
+        }
+      }
+    }
+  }
+  .main {
+    .main-slider {
+      float: left;
+      width: 730px;
+      height: 454px;
+      margin: 14px 10px 0 10px;
+      overflow: hidden;
+      position: relative;
+      .main-banner {
+        width: 710%;
+        height: 100%;
+        li {
+          float: left;
+        }
+      }
+      .banner-index {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%);
+        i {
+          float: left;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: transparent;
+          //background-color: @write;
+          cursor: pointer;
+          margin: 0 2px;
+          position: relative;
+          &.active {
+            background-color: rgba(255, 255, 255, .2);
+            &::after {
+              background-color: @write;
+              border: 2px solid @write;
+            }
+          }
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            left: 4px;
+            top: 4px;
+            border-radius: 50%;
+            border: 2px solid #b9beba;
+            transition: all .2s ease;
+          }
+        }
+      }
+
+    }
+    .jd-news {
+      float: right;
+      width: 248px;
+      height: 468px;
+      padding-top: 14px;
+      .jd-fast {
+        height: 163px;
+        border-bottom: 1px dashed #e8e8e7;
+        .fast-title {
+          height: 32px;
+
+          padding: 0 15px;
+          border: 1px solid #e4e4e4;
+          border-bottom: 1px dotted #e4e4e4;
+          h3 {
+            float: left;
+            font: 400 16px/32px "microsoft yaihei";
+          }
+          a {
+            float: right;
+            font-family: "consolas";
+            line-height: 32px;
+          }
+        }
+        .fast-news {
+          border-left: 1px solid #e4e4e4;
+          border-right: 1px solid #e4e4e4;
+          padding: 5px 0 0 15px;
+          height: 131px;
+          ul {
+            li {
+              line-height: 24px;
+              a {
+
+                span {
+                  font-weight: 700;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .middle-icon {
+        width: 248px;
+        border: 1px solid #e4e4e4;
+        border-top: 0;
+        height: 208px;
+        overflow: hidden;
+        ul {
+          width: 260px;
+          li {
+            box-sizing: border-box;
+            width: 63px;
+            height: 71px;
+            float: left;
+            border: 1px solid #e8e8e7;
+            border-top: 0;
+            margin-left: -1px;
+            margin-top: -1px;
+            a {
+              display: block;
+              width: 62px;
+              text-align: center;
+              i {
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: url("../../static/images/ico-1.png") 0 0 no-repeat;
+                margin-left: 18px;
+                margin-top: 13px;
+              }
+              span {
+                display: block;
+                margin-top: 6px;
+              }
+            }
+            #options {
+              width: 248px;
+              height: 208px;
+              border: 1px solid #e4e4e4;
+              background-color: @write;
+              margin-left: -1px;
+              //margin-top: 148px;
+              margin-top: 0;
+              z-index: 3;
+              .option-slide {
+
+                li {
+                  &.nav {
+                    //box-sizing: content-box;
+                    float: left;
+                    width: 62px;
+                    height: 27px;
+                    border: 1px solid #e4e4e4;
+                    line-height: 27px;
+                    text-align: center;
+                    background-color: @write;
+                    border-right: none;
+                    margin-left: -1px;
+                    margin-top: -1px;
+                    & > a {
+                      height: 25px;
+                      line-height: 25px;
+                    }
+                  }
+                  ul.nav-inner-2 {
+                    left: -62px;
+                  }
+                  ul.nav-inner-4 {
+                    left: -183px;
+                  }
+                  &.nav-3 {
+                    div.inner-wrap {
+                      position: absolute;
+                      left: -134px;
+                      top: 17px;
+                    }
+                    .movie {
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      img {
+                        width: 65px;
+                        height: 90px;
+                      }
+                    }
+                    .movie-1 {
+                      display: block;
+                      width: 57px;
+                      height: 20px;
+                      background-color: @jdBack;
+                      color: @write;
+                      line-height: 20px;
+                      margin-left: 5px;
+                      border-radius: 2px;
+                    }
+                  }
+                  &.active {
+                    border-top: 2px solid @jdBack;
+                    height: 27px;
+                    margin-top: 0;
+                    background-color: @write;
+                    border-bottom: none;
+                    line-height: 24px;
+                    .inner-wrap-1 {
+                      width: 248px;
+                      height: 150px;
+                      position: absolute;
+                      top: 20px;
+                      left: -10px;
+                    }
+                    .inner-wrap-3 {
+                      width: 248px;
+                      height: 150px;
+                      position: absolute;
+                      top: 20px;
+                      left: -134px;
+                    }
+                    .inner-wrap {
+                      .dl_1 {
+                        position: absolute;
+                        top: 10px;
+                      }
+                      .dl_2 {
+                        position: absolute;
+                        top: 45px;
+                      }
+                      & > span {
+                        color: @jdBack;
+                        //display: inline-block;
+                        position: absolute;
+                        top: 47px;
+                        left: 56px;
+                      }
+                      button {
+                        width: 66px;
+                        height: 27px;
+                        background-color: @jdBack;
+                        text-align: center;
+                        border-radius: 2px;
+                        position: absolute;
+                        bottom: 45px;
+                        left: 5px;
+                        line-height: 27px;
+                        cursor: pointer;
+                        color: @write;
+                      }
+                      .tel-ad {
+                        width: 200px;
+                        height: 20px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 5px;
+                        a {
+                          float: left;
+                          padding-left: 28px;
+                          color: #005ea7;
+                          background: url("../../static/images/hot.png") 1px 4px no-repeat;
+                        }
+                      }
+                    }
+                    dt {
+                      height: 20px;
+                      width: 50px;
+                    }
+                    span {
+                      display: block;
+                      width: 100%;
+                      margin-top: 6px;
+                      line-height: 8px;
+                      color: #666;
+                      text-align: center;
+                    }
+                    dd {
+                      float: left;
+                      width: 110px;
+                      height: 20px;
+                      margin-left: -10px;
+                    }
+                    input.tel-num {
+                      width: 102px;
+                      height: 20px;
+                      border: 1px solid #e4e4e4;
+                    }
+                    div.hover_1 {
+                      display: block;
+                      ul.nav-inner {
+                        width: 248px;
+                        height: 24px;
+                        position: relative;
+                        top: 10px;
+                        li {
+                          float: left;
+                          width: 52px;
+                          height: 16px;
+                          line-height: 16px;
+                          margin-left: 10px;
+                          margin-top: 3px;
+                          margin-bottom: 10px;
+                          position: relative;
+                          z-index: 2;
+                          &.hover_2 {
+                            a {
+                              display: block;
+                              background: url("../../static/images/iframe.png") -15px 0 no-repeat;
+                              color: @write;
+                              padding: 0 2px;
+                              height: 20px;
+                              div.hover_3 {
+                                display: block;
+                              }
+                            }
+                          }
+
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -25px no-repeat;
+                }
+              }
+            }
+            &:nth-child(3) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -50px no-repeat;
+                }
+              }
+            }
+            &:nth-child(4) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -75px no-repeat;
+                }
+              }
+            }
+            &:nth-child(5) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -100px no-repeat;
+                }
+              }
+            }
+            &:nth-child(6) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -125px no-repeat;
+                }
+              }
+            }
+            &:nth-child(7) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -150px no-repeat;
+                }
+              }
+            }
+            &:nth-child(8) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -175px no-repeat;
+                }
+              }
+            }
+            &:nth-child(9) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -200px no-repeat;
+                }
+              }
+            }
+            &:nth-child(10) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -225px no-repeat;
+                }
+              }
+            }
+            &:nth-child(11) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -250px no-repeat;
+                }
+              }
+            }
+            &:nth-child(12) {
+              a {
+                i {
+                  background: url("../../static/images/ico-1.png") 0 -275px no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bottom-img {
+        margin-top: 8px;
+        img {
+          width: 248px;
+        }
+      }
+    }
+  }
+  .sub-banner {
+    height: 164px;
+    margin-top: 10px;
+    .left-topic {
+      float: left;
+    }
+    .img-banner {
+      float: left;
+      width: 1000px;
+      position: relative;
+      overflow: hidden;
+      ul {
+        width: 600%;
+        li {
+          float: left;
+          margin-right: 1px;
+          //width: 249px;
+          a {
+            img {
+              display: inline-block;
+              width: 249px;
+            }
+          }
         }
       }
     }
