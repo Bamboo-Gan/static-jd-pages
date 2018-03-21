@@ -1,6 +1,10 @@
 @charset "UTF-8";
 #jd-container {
   height: 5000px;
+  /*三角左右*/
+  /*主体部分内容*/
+  /*主体部分的底部导航*/
+  /*猜你喜欢部分开始*/
 }
 #jd-container .top-container {
   height: 30px;
@@ -1457,5 +1461,126 @@
   margin-top: 5px;
 }
 #jd-container .likes .like-items ul li:nth-child(6n) .info {
+  border-right: none;
+}
+#jd-container .beautiful-life {
+  margin-top: 30px;
+}
+#jd-container .beautiful-life h2 {
+  height: 36px;
+  line-height: 36px;
+  color: #333;
+  font: 700 20px/36px "microsoft yaihei";
+}
+#jd-container .beautiful-life .cont {
+  border: 1px solid #ededed;
+  height: 407px;
+  overflow: hidden;
+}
+#jd-container .beautiful-life .cont h4 {
+  height: 40px;
+  margin: 0 20px;
+  text-align: center;
+  font: 700 15px/40px "microsoft yaihei";
+  color: #333;
+  border-bottom: 1px dashed #e0e0e0;
+}
+#jd-container .beautiful-life .cont .item-1 .sub-title,
+#jd-container .beautiful-life .cont .item-2 .sub-title,
+#jd-container .beautiful-life .cont .item-3 .sub-title,
+#jd-container .beautiful-life .cont .item-4 .sub-title,
+#jd-container .beautiful-life .cont .item-5 .sub-title {
+  height: 63px;
+  position: absolute;
+  left: 7%;
+  top: 45%;
+}
+#jd-container .beautiful-life .cont .item-1 .sub-title .tit,
+#jd-container .beautiful-life .cont .item-2 .sub-title .tit,
+#jd-container .beautiful-life .cont .item-3 .sub-title .tit,
+#jd-container .beautiful-life .cont .item-4 .sub-title .tit,
+#jd-container .beautiful-life .cont .item-5 .sub-title .tit {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#jd-container .beautiful-life .cont .item-1 .sub-title .pro,
+#jd-container .beautiful-life .cont .item-2 .sub-title .pro,
+#jd-container .beautiful-life .cont .item-3 .sub-title .pro,
+#jd-container .beautiful-life .cont .item-4 .sub-title .pro,
+#jd-container .beautiful-life .cont .item-5 .sub-title .pro {
+  color: #333;
+  font-family: "microsoft yaihei";
+}
+#jd-container .beautiful-life .cont .item-1 .sub-title .desc,
+#jd-container .beautiful-life .cont .item-2 .sub-title .desc,
+#jd-container .beautiful-life .cont .item-3 .sub-title .desc,
+#jd-container .beautiful-life .cont .item-4 .sub-title .desc,
+#jd-container .beautiful-life .cont .item-5 .sub-title .desc {
+  color: #c81623;
+}
+#jd-container .beautiful-life .cont .cont-left,
+#jd-container .beautiful-life .cont .cont-right {
+  background-color: #f7f7f7;
+  height: 100%;
+}
+#jd-container .beautiful-life .cont .cont-left .img-left,
+#jd-container .beautiful-life .cont .cont-right .img-left {
+  width: 404px;
+  border-right: 1px solid #ededed;
+  overflow: hidden;
+}
+#jd-container .beautiful-life .cont .cont-left .img-left .item-1,
+#jd-container .beautiful-life .cont .cont-right .img-left .item-1 {
+  width: 404px;
+  height: 248px;
+  display: block;
+  position: relative;
+}
+#jd-container .beautiful-life .cont .cont-left .img-left .item-2,
+#jd-container .beautiful-life .cont .cont-right .img-left .item-2,
+#jd-container .beautiful-life .cont .cont-left .img-left .item-3,
+#jd-container .beautiful-life .cont .cont-right .img-left .item-3 {
+  float: left;
+  width: 201px;
+  height: 158px;
+  position: relative;
+}
+#jd-container .beautiful-life .cont .cont-left {
+  width: 634px;
+  boroder-right: 1px solid #ededed;
+}
+#jd-container .beautiful-life .cont .cont-left .img-right {
+  width: 228px;
+  height: 100%;
+  background-color: #fff;
+}
+#jd-container .beautiful-life .cont .cont-left .img-right .item-4 {
+  display: block;
+  width: 228px;
+  height: 248px;
+  position: relative;
+}
+#jd-container .beautiful-life .cont .cont-left .img-right .item-5 {
+  display: block;
+  width: 228px;
+  height: 158px;
+  position: relative;
+}
+#jd-container .beautiful-life .cont .cont-right .img-right {
+  width: 170px;
+  background-color: #fff;
+}
+#jd-container .beautiful-life .cont .cont-right .img-right .brands li {
+  float: left;
+  height: 58px;
+  width: 84px;
+  margin-right: 1px;
+  border-bottom: 1px dashed #ededed;
+  border-right: 1px dashed #ededed;
+  position: relative;
+  overflow: hidden;
+}
+#jd-container .beautiful-life .cont .cont-right .img-right .brands li:nth-child(2n) {
   border-right: none;
 }

@@ -695,6 +695,7 @@
       }
     }
   }
+  /*三角左右*/
   .main .main-slider,
   .sub-banner .img-banner {
     .arrow {
@@ -723,6 +724,7 @@
       }
     }
   }
+  /*主体部分内容*/
   .main {
     .main-slider {
       float: left;
@@ -988,7 +990,7 @@
                           left: -73px;
                         }
                       }
-                      .inner-wrap-1,.inner-wrap-2 {
+                      .inner-wrap-1, .inner-wrap-2 {
                         display: none;
                       }
                       div.inner-wrap {
@@ -1162,7 +1164,7 @@
                       z-index: 2;
                       border: none;
                       &.hover_2 {
-                        &>a {
+                        & > a {
                           display: block;
                           background: url("../../static/images/iframe.png") -15px 0 no-repeat;
                           color: @write;
@@ -1189,6 +1191,7 @@
       }
     }
   }
+  /*主体部分的底部导航*/
   .sub-banner {
     height: 164px;
     margin-top: 10px;
@@ -1216,6 +1219,7 @@
       }
     }
   }
+  /*猜你喜欢部分开始*/
   .likes {
     margin-top: 25px;
     .like-title {
@@ -1309,11 +1313,121 @@
               margin-top: 5px;
             }
           }
-          &:nth-child(6n){
+          &:nth-child(6n) {
             .info {
               border-right: none;
             }
           }
+        }
+      }
+    }
+  }
+  .beautiful-life {
+    margin-top: 30px;
+    h2 {
+      height: 36px;
+      line-height: 36px;
+      color: #333;
+      font: 700 20px/36px "microsoft yaihei";
+    }
+    .cont {
+      border: 1px solid #ededed;
+      height: 407px;
+      overflow: hidden;
+      h4 {
+        height: 40px;
+        margin: 0 20px;
+        text-align: center;
+        font: 700 15px/40px "microsoft yaihei";
+        color: #333;
+        border-bottom: 1px dashed #e0e0e0;
+      }
+      .item-1, .item-2, .item-3, .item-4, .item-5 {
+        .sub-title {
+          height: 63px;
+          position: absolute;
+          left: 7%;
+          top: 45%;
+          .tit {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+          .pro {
+            color: #333;
+            font-family: "microsoft yaihei";
+          }
+          .desc {
+            color: @jdBack;
+          }
+        }
+      }
+      .cont-left, .cont-right {
+        background-color: #f7f7f7;
+        height: 100%;
+        .img-left {
+          width: 404px;
+          border-right: 1px solid #ededed;
+          overflow: hidden;
+          .item-1 {
+            width: 404px;
+            height: 248px;
+            display: block;
+            position: relative;
+          }
+          .item-2, .item-3 {
+            //display: inline-block;
+            float: left;
+            width: 201px;
+            height: 158px;
+            position: relative;
+          }
+        }
+      }
+      .cont-left {
+        width: 634px;
+        //border: 1px solid #ededed;
+        boroder-right: 1px solid #ededed;
+        .img-right {
+          width: 228px;
+          height: 100%;
+          background-color: @write;
+          .item-4 {
+            display: block;
+            width: 228px;
+            height: 248px;
+            position: relative;
+          }
+          .item-5 {
+            display: block;
+            width: 228px;
+            height: 158px;
+            position: relative;
+          }
+        }
+      }
+      .cont-right {
+        //width: 576px;
+        .img-right {
+          width: 170px;
+          background-color: @write;
+          .brands {
+            //margin-top: 12px;
+            li {
+              float: left;
+              height: 58px;
+              width: 84px;
+              margin-right: 1px;
+              border-bottom: 1px dashed #ededed;
+              border-right: 1px dashed #ededed;
+              position: relative;
+              overflow: hidden;
+              &:nth-child(2n) {
+                border-right: none;
+              }
+            }
+          }
+
         }
       }
     }
