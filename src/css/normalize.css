@@ -129,7 +129,7 @@ ins, a {
 }
 
 /*表单边框的去除*/
-button, input {
+button, input,select {
 	border: none;
 	outline: none;
 }
