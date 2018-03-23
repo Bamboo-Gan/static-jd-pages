@@ -4,7 +4,7 @@
 @write: #fff;
 @ddd: #ddd;
 #jd-container {
-  height: 5000px;
+  //height: 5000px;
   .top-container {
     height: 30px;
     background-color: #f1f1f1;
@@ -356,13 +356,16 @@
     }
   }
   .header {
-    height: 100px;
-    padding: 20px 0;
+    //height: 100px;
+    //padding: 20px 0;
     .w {
-      height: 100%;
+      //height: 100%;
       //background-color: red;
       #logo {
+        height: 100px;
         width: 362px;
+        //height: 60px;
+        padding: 20px 0;
         h1 {
           a {
             display: inline-block;
@@ -374,6 +377,7 @@
         }
       }
       #search {
+        padding-top: 25px;
         input {
           width: 454px;
           height: 36px;
@@ -381,6 +385,7 @@
           border: 2px solid @jdRed;
           border-right: none;
           font: 400 14px/36px "microsoft yaihei";
+
         }
         button {
           width: 82px;
@@ -399,8 +404,9 @@
         border: 1px solid #dfdfdf;
         //border: 1px solid red;
         background-color: #f9f9f9;
-        margin: 0 65px 0 0;
+        margin: 25px 65px 0 0;
         position: relative;
+        //float: right;
         .icon-content {
           height: 100%;
           padding-left: 43px;
@@ -476,16 +482,21 @@
 
       }
       .hotwords {
+        float: left;
         width: 530px;
-        height: 28px;
+        height: 22px;
+        margin-top: 5px;
+
+        //display: inline-block;
+        //height: 28px;
+        line-height: 22px;
         a {
+          float: left;
+          margin-right: 10px;
           &.jdRed {
             color: @jdRed;
           }
-          display: inline-block;
-          height: 28px;
-          line-height: 28px;
-          margin-right: 8px;
+          
         }
       }
     }
@@ -1431,5 +1442,82 @@
         }
       }
     }
+  }
+
+  .middle-banner {
+    margin-top: 20px;
+    height: 125px;
+    ul {
+      li {
+        float: left;
+      }
+    }
+  }
+  .footer-top-slogan {
+    width: 100%;
+    height: 94px;
+    position: relative;
+    margin-bottom: 16px;
+    background: #EAEAEA;
+  }
+  .footer-top-slogan-icon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+  }
+  .footer-top-slogan-icon1 {
+    margin-left: -604px;
+  }
+  .footer-top-slogan-icon2 {
+    margin-left: -302px;
+  }
+  .footer-top-slogan-icon4 {
+    margin-left: 302px;
+  }
+  .footer-top-shopping dl {
+    float: left;
+    width: 200px;
+  }
+  dl.last {
+    width: 100px;
+  }
+  .footer-top-shopping dt,
+  .coverage h3 {
+    height: 34px;
+    font: 400 16px/34px "microsoft yahei";
+  }
+  .footer-top-shopping dd {
+    line-height: 20px;
+  }
+  .coverage {
+    width: 186px;
+    height: 169px;
+    float: right;
+    margin-right: 60px;
+    padding-left: 17px;
+    background: url("../../static/images/foot.png") no-repeat left bottom;
+  }
+
+  .coverage p {
+    margin-top: 8px;
+  }
+  .coverage a {
+    float: right;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0 30px;
+    border-top: 1px solid #e5e5e5;
+
+  }
+  .footer-bottom-link a {
+    margin: 0 10px;
+  }
+  .footer-bottom-copyright {
+    margin: 10px 0;
+  }
+  .footer-bottom-img a {
+    margin: 0 5px;
   }
 }
