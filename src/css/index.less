@@ -3,8 +3,6 @@
 @jdBack: #c81623;
 @write: #fff;
 @ddd: #ddd;
-#jd-container {
-  //height: 5000px;
   .top-container {
     height: 30px;
     background-color: #f1f1f1;
@@ -706,7 +704,7 @@
       }
     }
   }
-  /*三角左右*/
+
   .main .main-slider,
   .sub-banner .img-banner {
     .arrow {
@@ -745,6 +743,9 @@
       overflow: hidden;
       position: relative;
       .main-banner {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 710%;
         height: 100%;
         li {
@@ -1516,8 +1517,11 @@
   }
   .footer-bottom-copyright {
     margin: 10px 0;
+    img {
+      vertical-align: middle;
+    }
   }
   .footer-bottom-img a {
     margin: 0 5px;
   }
-}
+
